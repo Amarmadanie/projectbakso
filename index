@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Bakso Seger Boyolali - Profil bisnis, menu, lokasi outlet, dan kontak."
+  />
+
+  <title>Bakso Seger Boyolali | Official Website</title>
+
+  <style>
+    :root {
+      --red: #a91515;
+      --red-light: #ef4444;
+      --dark: #111111;
+      --dark-2: #1c1c1c;
+      --cream: #fffaf2;
+      --white: #ffffff;
+      --muted: #737373;
+      --line: #eadfd5;
+      --gold: #f59e0b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+
+      background: var(--cream);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+    }
+
+    .container {
+      width: min(1160px, 92%);
+      margin: auto;
+    }
+
+    /* =========================
+       NAVBAR
+    ========================= */
+
+    .navbar {
+      position: fixed;
+      z-index: 1000;
+
+      top: 16px;
+      left: 50%;
+
+      transform: translateX(-50%);
+
+      width: min(1120px, 92%);
+
+      padding: 12px 14px 12px 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      border-radius: 20px;
+
+      color: white;
+
+      background: rgba(17, 17, 17, 0.82);
+
+      border: 1px solid rgba(255,255,255,0.12);
+
+      backdrop-filter: blur(18px);
+
+      box-shadow:
+        0 15px 50px rgba(0,0,0,0.25);
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: 950;
+      letter-spacing: -0.8px;
+    }
+
+    .logo span {
+      color: #f87171;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 26px;
+
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .nav-menu a {
+      transition: 0.25s;
+    }
+
+    .nav-menu a:hover {
+      color: #fca5a5;
+    }
+
+    .nav-button {
+      padding: 10px 16px;
+
+      border-radius: 13px;
+
+      background: var(--red-light);
+
+      font-weight: 900;
+
+      transition: 0.25s;
+    }
+
+    .nav-button:hover {
+      transform: translateY(-2px);
+      background: #dc2626;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 94vh;
+
+      display: flex;
+      align-items: center;
+
+      color: white;
+
+      overflow: hidden;
+
+      background:
+        radial-gradient(
+          circle at 78% 30%,
+          #7f1d1d 0%,
+          #350909 35%,
+          #080808 78%
+        );
+    }
+
+    .hero-container {
+      padding-top: 80px;
+
+      display: grid;
+
+      grid-template-columns:
+        1.08fr
+        0.92fr;
+
+      gap: 55px;
+
+      align-items: center;
+    }
+
+    .hero-label {
+      display: inline-flex;
+
+      padding: 8px 13px;
+
+      margin-bottom: 20px;
+
+      border-radius: 999px;
+
+      color: #fecaca;
+
+      border: 1px solid rgba(255,255,255,0.15);
+
+      background: rgba(255,255,255,0.05);
+
+      font-size: 13px;
+
+      font-weight: 800;
+    }
+
+    .hero h1 {
+      max-width: 750px;
+
+      font-size:
+        clamp(45px, 7vw, 84px);
+
+      line-height: 0.96;
+
+      letter-spacing: -5px;
+    }
+
+    .hero h1 span {
+      color: #f87171;
+    }
+
+    .hero-description {
+      max-width: 610px;
+
+      margin: 25px 0;
+
+      color: #d4d4d4;
+
+      font-size: 18px;
+    }
+
+    .hero-actions {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 11px;
+    }
+
+    .button {
+      display: inline-flex;
+
+      align-items: center;
+      justify-content: center;
+
+      padding: 13px 18px;
+
+      border-radius: 14px;
+
+      font-weight: 900;
+
+      transition: 0.3s;
+    }
+
+    .button-red {
+      background: var(--red-light);
+    }
+
+    .button-red:hover {
+      transform: translateY(-3px);
+      background: #dc2626;
+    }
+
+    .button-outline {
+      border: 1px solid rgba(255,255,255,0.18);
+
+      background: rgba(255,255,255,0.05);
+    }
+
+    .button-outline:hover {
+      background: rgba(255,255,255,0.12);
+    }
+
+    /* HERO ART */
+
+    .hero-visual {
+      position: relative;
+
+      height: 500px;
+
+      display: flex;
+
+      align-items: flex-end;
+
+      padding: 25px;
+
+      overflow: hidden;
+
+      border-radius: 34px;
+
+      border: 1px solid rgba(255,255,255,0.12);
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255,255,255,0.09),
+          rgba(255,255,255,0.02)
+        );
+
+      box-shadow:
+        0 30px 100px rgba(0,0,0,0.55);
+    }
+
+    .hero-badge {
+      position: absolute;
+
+      top: 20px;
+      right: 20px;
+
+      padding: 10px 14px;
+
+      border-radius: 14px;
+
+      background: white;
+
+      color: var(--red);
+
+      font-weight: 950;
+
+      box-shadow:
+        0 15px 30px rgba(0,0,0,0.2);
+    }
+
+    .steam {
+      position: absolute;
+
+      top: 55px;
+      left: 50%;
+
+      font-size: 75px;
+
+      opacity: 0.28;
+
+      filter: blur(2px);
+
+      animation:
+        steam 3s ease-in-out infinite;
+    }
+
+    @keyframes steam {
+      50% {
+        transform:
+          translateY(-20px);
+
+        opacity: 0.12;
+      }
+    }
+
+    .bowl {
+      width: 100%;
+      height: 315px;
+
+      border-radius:
+        50%
+        50%
+        42%
+        42%;
+
+      background:
+        radial-gradient(
+          circle at 50% 35%,
+          #f59e0b 0%,
+          #7f1d1d 10%,
+          #ef4444 20%,
+          #f5d49d 30%,
+          #f5d49d 62%,
+          #a16207 100%
+        );
+
+      box-shadow:
+        inset 0 -40px 70px rgba(0,0,0,0.55),
+        0 25px 55px rgba(0,0,0,0.6);
+
+      transform: rotate(-3deg);
+    }
+
+    /* =========================
+       SECTION
+    ========================= */
+
+    section {
+      padding: 95px 0;
+    }
+
+    .section-header {
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: flex-end;
+
+      gap: 30px;
+
+      margin-bottom: 35px;
+    }
+
+    .eyebrow {
+      color: var(--red);
+
+      font-size: 12px;
+
+      font-weight: 950;
+
+      text-transform: uppercase;
+
+      letter-spacing: 2px;
+    }
+
+    .section-header h2 {
+      margin-top: 5px;
+
+      font-size:
+        clamp(32px, 4vw, 50px);
+
+      line-height: 1.05;
+
+      letter-spacing: -2.5px;
+    }
+
+    .section-header p {
+      max-width: 500px;
+
+      color: var(--muted);
+    }
+
+    /* =========================
+       STATS
+    ========================= */
+
+    .stats {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 16px;
+    }
+
+    .stat {
+      padding: 28px;
+
+      background: white;
+
+      border: 1px solid var(--line);
+
+      border-radius: 23px;
+
+      box-shadow:
+        0 15px 40px rgba(0,0,0,0.07);
+    }
+
+    .stat-icon {
+      font-size: 30px;
+
+      margin-bottom: 8px;
+    }
+
+    .stat h3 {
+      font-size: 19px;
+    }
+
+    .stat p {
+      color: var(--muted);
+
+      font-size: 14px;
+    }
+
+    /* =========================
+       MENU
+    ========================= */
+
+    .menu-section {
+      background: var(--dark);
+
+      color: white;
+    }
+
+    .menu-section .section-header p {
+      color: #aaa;
+    }
+
+    .filters {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 9px;
+
+      margin-bottom: 25px;
+    }
+
+    .filter {
+      cursor: pointer;
+
+      padding: 9px 15px;
+
+      color: #ddd;
+
+      border:
+        1px solid
+        rgba(255,255,255,0.12);
+
+      background: rgba(255,255,255,0.04);
+
+      border-radius: 999px;
+
+      font-weight: 800;
+    }
+
+    .filter.active {
+      color: white;
+
+      background: var(--red-light);
+
+      border-color: var(--red-light);
+    }
+
+    .menu-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 18px;
+    }
+
+    .menu-card {
+      overflow: hidden;
+
+      color: var(--dark);
+
+      background: white;
+
+      border-radius: 24px;
+
+      box-shadow:
+        0 18px 45px rgba(0,0,0,0.28);
+
+      transition: 0.3s;
+    }
+
+    .menu-card:hover {
+      transform:
+        translateY(-7px);
+    }
+
+    .food-image {
+      height: 190px;
+
+      display: grid;
+
+      place-items: center;
+
+      font-size: 72px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #fee2e2,
+          #fed7aa
+        );
+    }
+
+    .menu-content {
+      padding: 20px;
+    }
+
+    .menu-title {
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 12px;
+    }
+
+    .menu-title h3 {
+      font-size: 19px;
+    }
+
+    .menu-price {
+      color: var(--red);
+
+      font-weight: 950;
+
+      white-space: nowrap;
+    }
+
+    .menu-content p {
+      margin-top: 8px;
+
+      color: var(--muted);
+
+      font-size: 14px;
+    }
+
+    .tag {
+      display: inline-block;
+
+      margin-top: 12px;
+
+      padding: 5px 9px;
+
+      border-radius: 999px;
+
+      color: #991b1b;
+
+      background: #fef2f2;
+
+      font-size: 11px;
+
+      font-weight: 900;
+    }
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about {
+      display: grid;
+
+      grid-template-columns:
+        1fr
+        1fr;
+
+      gap: 55px;
+
+      align-items: center;
+    }
+
+    .about-visual {
+      position: relative;
+
+      height: 430px;
+
+      overflow: hidden;
+
+      border-radius: 32px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #450a0a,
+          #991b1b
+        );
+
+      box-shadow:
+        0 25px 65px rgba(0,0,0,0.16);
+    }
+
+    .about-visual::before {
+      content: "SEGER";
+
+      position: absolute;
+
+      top: 100px;
+      left: -15px;
+
+      color: rgba(255,255,255,0.06);
+
+      font-size: 110px;
+
+      font-weight: 1000;
+
+      transform:
+        rotate(-12deg);
+    }
+
+    .about-quote {
+      position: absolute;
+
+      left: 25px;
+      right: 25px;
+      bottom: 25px;
+
+      padding: 20px;
+
+      color: var(--dark);
+
+      background:
+        rgba(255,255,255,0.94);
+
+      border-radius: 20px;
+
+      font-weight: 850;
+    }
+
+    .about h2 {
+      margin-top: 5px;
+
+      font-size:
+        clamp(32px,4vw,50px);
+
+      line-height: 1.05;
+
+      letter-spacing: -2.5px;
+    }
+
+    .about-description {
+      margin: 20px 0;
+
+      color: var(--muted);
+    }
+
+    .checks {
+      display: grid;
+
+      gap: 12px;
+    }
+
+    .check {
+      display: flex;
+
+      align-items: center;
+
+      gap: 10px;
+
+      font-weight: 800;
+    }
+
+    .check-icon {
+      width: 27px;
+      height: 27px;
+
+      display: grid;
+
+      place-items: center;
+
+      border-radius: 50%;
+
+      color: var(--red);
+
+      background: #fee2e2;
+    }
+
+    /* =========================
+       LOCATION
+    ========================= */
+
+    .locations {
+      background: white;
+    }
+
+    .location-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 18px;
+    }
+
+    .location-card {
+      padding: 26px;
+
+      border:
+        1px solid
+        var(--line);
+
+      border-radius: 23px;
+
+      box-shadow:
+        0 15px 40px rgba(0,0,0,0.06);
+    }
+
+    .location-icon {
+      font-size: 28px;
+    }
+
+    .location-card h3 {
+      margin: 8px 0;
+    }
+
+    .location-card p {
+      margin-bottom: 15px;
+
+      color: var(--muted);
+
+      font-size: 14px;
+    }
+
+    .map-link {
+      color: var(--red);
+
+      font-weight: 950;
+    }
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact-section {
+      background: #fee2e2;
+    }
+
+    .contact-box {
+      display: grid;
+
+      grid-template-columns:
+        1fr
+        auto;
+
+      align-items: center;
+
+      gap: 30px;
+
+      padding: 45px;
+
+      color: white;
+
+      background: var(--dark);
+
+      border-radius: 30px;
+    }
+
+    .contact-box h2 {
+      margin-top: 5px;
+
+      font-size:
+        clamp(32px,4vw,45px);
+
+      line-height: 1.05;
+    }
+
+    .contact-box p {
+      margin-top: 10px;
+
+      color: #aaa;
+    }
+
+    .contact-actions {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 10px;
+    }
+
+    .contact-actions a {
+      padding: 12px 17px;
+
+      border-radius: 13px;
+
+      background: var(--red-light);
+
+      font-weight: 900;
+    }
+
+    .contact-actions a:last-child {
+      color: var(--dark);
+
+      background: white;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      padding: 35px 0;
+
+      color: #aaa;
+
+      background: #090909;
+    }
+
+    .footer-inner {
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 20px;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    /* =========================
+       SCROLL ANIMATION
+    ========================= */
+
+    .reveal {
+      opacity: 0;
+
+      transform:
+        translateY(25px);
+
+      transition:
+        opacity .7s ease,
+        transform .7s ease;
+    }
+
+    .reveal.show {
+      opacity: 1;
+
+      transform:
+        translateY(0);
+    }
+
+    /* =========================
+       BACK TO TOP
+    ========================= */
+
+    #backTop {
+      position: fixed;
+
+      z-index: 999;
+
+      right: 18px;
+      bottom: 18px;
+
+      width: 45px;
+      height: 45px;
+
+      display: none;
+
+      border: 0;
+
+      border-radius: 50%;
+
+      color: white;
+
+      background: var(--red-light);
+
+      font-size: 20px;
+
+      cursor: pointer;
+
+      box-shadow:
+        0 12px 30px rgba(0,0,0,0.25);
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media(max-width: 800px) {
+
+      .nav-menu {
+        display: none;
+      }
+
+      .hero-container {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+
+        padding:
+          130px 0
+          70px;
+      }
+
+      .hero h1 {
+        letter-spacing: -3px;
+      }
+
+      .hero-visual {
+        height: 380px;
+      }
+
+      .bowl {
+        height: 245px;
+      }
+
+      .stats,
+      .menu-grid,
+      .location-grid,
+      .about,
+      .contact-box {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .section-header {
+        display: block;
+      }
+
+      .section-header p {
+        margin-top: 12px;
+      }
+
+      .contact-box {
+        padding: 30px;
+      }
+
+      .footer-inner {
+        display: block;
+      }
+
+      .footer-inner p + p {
+        margin-top: 7px;
+      }
+    }
+
+    @media(prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      * {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<nav class="navbar">
+
+  <a href="#home" class="logo">
+    BAKSO <span>SEGER</span>
+  </a>
+
+  <div class="nav-menu">
+    <a href="#menu">Menu</a>
+    <a href="#about">Tentang</a>
+    <a href="#lokasi">Lokasi</a>
+    <a href="#kontak">Kontak</a>
+  </div>
+
+  <a href="#menu" class="nav-button">
+    Lihat Menu
+  </a>
+
+</nav>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<header class="hero" id="home">
+
+  <div class="container hero-container">
+
+    <div class="reveal">
+
+      <span class="hero-label">
+        🍲 KULINER • BOYOLALI
+      </span>
+
+      <h1>
+        Semangkuk yang bikin
+        <span>balik lagi.</span>
+      </h1>
+
+      <p class="hero-description">
+        Bakso Seger Boyolali hadir dengan rasa gurih,
+        kuah hangat, dan suasana makan yang nyaman
+        untuk keluarga, teman, atau sekadar nemenin
+        hari yang capek.
+      </p>
+
+      <div class="hero-actions">
+
+        <a
+          href="#menu"
+          class="button button-red"
+        >
+          Jelajahi Menu ↓
+        </a>
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Bakso+Seger+Boyolali"
+          target="_blank"
+          class="button button-outline"
+        >
+          📍 Cari di Google Maps
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="hero-visual reveal">
+
+      <div class="hero-badge">
+        🔥 SEGER TERUS
+      </div>
+
+      <div class="steam">
+        ♨︎
+      </div>
+
+      <div class="bowl"></div>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<!-- =========================
+     QUICK INFO
+========================= -->
+
+<section>
+
+  <div class="container stats">
+
+    <div class="stat reveal">
+
+      <div class="stat-icon">
+        🍲
+      </div>
+
+      <h3>
+        Menu Favorit
+      </h3>
+
+      <p>
+        Bakso, mie, dan minuman
+        pendamping.
+      </p>
+
+    </div>
+
+
+    <div class="stat reveal">
+
+      <div class="stat-icon">
+        📍
+      </div>
+
+      <h3>
+        3 Outlet
+      </h3>
+
+      <p>
+        Ciater • Ciputat • Pengasinan.
+      </p>
+
+    </div>
+
+
+    <div class="stat reveal">
+
+      <div class="stat-icon">
+        ❤️
+      </div>
+
+      <h3>
+        Untuk Semua
+      </h3>
+
+      <p>
+        Cocok untuk makan sendiri
+        atau rame-rame.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     MENU
+========================= -->
+
+<section class="menu-section" id="menu">
+
+  <div class="container">
+
+    <div class="section-header reveal">
+
+      <div>
+
+        <div class="eyebrow">
+          MENU
+        </div>
+
+        <h2>
+          Yang mau kamu santap?
+        </h2>
+
+      </div>
+
+      <p>
+        Pilih menu favoritmu dan nikmati
+        semangkuk bakso hangat bersama
+        orang-orang terdekat.
+      </p>
+
+    </div>
+
+
+    <div class="filters reveal">
+
+      <button
+        class="filter active"
+        data-category="all"
+      >
+        Semua
+      </button>
+
+      <button
+        class="filter"
+        data-category="bakso"
+      >
+        Bakso
+      </button>
+
+      <button
+        class="filter"
+        data-category="mie"
+      >
+        Mie
+      </button>
+
+      <button
+        class="filter"
+        data-category="minuman"
+      >
+        Minuman
+      </button>
+
+    </div>
+
+
+    <div class="menu-grid">
+
+      <!-- MENU 1 -->
+
+      <article
+        class="menu-card reveal"
+        data-category="bakso"
+      >
+
+        <div class="food-image">
+          🍲
+        </div>
+
+        <div class="menu-content">
+
+          <div class="menu-title">
+
+            <h3>
+              Bakso Komplit
+            </h3>
+
+            <span class="menu-price">
+              Favorit
+            </span>
+
+          </div>
+
+          <p>
+            Bakso dengan pilihan
+            pendamping lengkap untuk
+            makan lebih puas.
+          </p>
+
+          <span class="tag">
+            BEST SELLER
+          </span>
+
+        </div>
+
+      </article>
+
+
+      <!-- MENU 2 -->
+
+      <article
+        class="menu-card reveal"
+        data-category="bakso"
+      >
+
+        <div class="food-image">
+          🥣
+        </div>
+
+        <div class="menu-content">
+
+          <div class="menu-title">
+
+            <h3>
+              Bakso Urat
+            </h3>
+
+            <span class="menu-price">
+              Favorit
+            </span>
+
+          </div>
+
+          <p>
+            Tekstur bakso yang lebih
+            berisi untuk pecinta bakso
+            dengan sensasi mantap.
+          </p>
+
+          <span class="tag">
+            BAKSO
+          </span>
+
+        </div>
+
+      </article>
+
+
+      <!-- MENU 3 -->
+
+      <article
+        class="menu-card reveal"
+        data-category="mie"
+      >
+
+        <div class="food-image">
+          🍜
+        </div>
+
+        <div class="menu-content">
+
+          <div class="menu-title">
+
+            <h3>
+              Mie Ayam
+            </h3>
+
+            <span class="menu-price">
+              Favorit
+            </span>
+
+          </div>
+
+          <p>
+            Mie hangat dengan rasa
+            gurih yang cocok dipadukan
+            dengan bakso.
+          </p>
+
+          <span class="tag">
+            MIE
+          </span>
+
+        </div>
+
+      </article>
+
+
+      <!-- MENU 4 -->
+
+      <article
+        class="menu-card reveal"
+        data-category="bakso"
+      >
+
+        <div class="food-image">
+          🌶️
+        </div>
+
+        <div class="menu-content">
+
+          <div class="menu-title">
+
+            <h3>
+              Bakso Pedas
+            </h3>
+
+            <span class="menu-price">
+              Pilihan
+            </span>
+
+          </div>
+
+          <p>
+            Untuk kamu yang suka
+            sensasi pedas yang lebih
+            nendang.
+          </p>
+
+          <span class="tag">
+            PEDAS
+          </span>
+
+        </div>
+
+      </article>
+
+
+      <!-- MENU 5 -->
+
+      <article
+        class="menu-card reveal"
+        data-category="minuman"
+      >
+
+        <div class="food-image">
+          🥤
+        </div>
+
+        <div class="menu-content">
+
+          <div class="menu-title">
+
+            <h3>
+              Minuman Segar
+            </h3>
+
+            <span class="menu-price">
+              Pilihan
+            </span>
+
+          </div>
+
+          <p>
+            Minuman dingin untuk
+            melengkapi pengalaman
+            makan.
+          </p>
+
+          <span class="tag">
+            MINUMAN
+          </span>
+
+        </div>
+
+      </article>
+
+
+      <!-- MENU 6 -->
+
+      <article
+        class="menu-card reveal"
+        data-category="minuman"
+      >
+
+        <div class="food-image">
+          🧊
+        </div>
+
+        <div class="menu-content">
+
+          <div class="menu-title">
+
+            <h3>
+              Es Seger
+            </h3>
+
+            <span class="menu-price">
+              Pilihan
+            </span>
+
+          </div>
+
+          <p>
+            Minuman dingin yang cocok
+            menemani semangkuk bakso.
+          </p>
+
+          <span class="tag">
+            SEGAR
+          </span>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about">
+
+  <div class="container about">
+
+    <div class="about-visual reveal">
+
+      <div class="about-quote">
+
+        “Sederhana, hangat,
+        dan bikin pengen nambah.”
+
+      </div>
+
+    </div>
+
+
+    <div class="reveal">
+
+      <div class="eyebrow">
+        TENTANG KAMI
+      </div>
+
+      <h2>
+        Lebih dari sekadar
+        semangkuk bakso.
+      </h2>
+
+      <p class="about-description">
+
+        Bakso Seger Boyolali merupakan
+        usaha kuliner yang menghadirkan
+        pengalaman makan yang nyaman,
+        rasa yang familiar, dan pelayanan
+        yang dekat dengan pelanggan.
+
+      </p>
+
+
+      <div class="checks">
+
+        <div class="check">
+          <span class="check-icon">✓</span>
+          Kuah hangat dan rasa yang familiar
+        </div>
+
+        <div class="check">
+          <span class="check-icon">✓</span>
+          Pilihan menu untuk berbagai selera
+        </div>
+
+        <div class="check">
+          <span class="check-icon">✓</span>
+          Cocok untuk keluarga dan teman
+        </div>
+
+        <div class="check">
+          <span class="check-icon">✓</span>
+          Mudah ditemukan melalui Google Maps
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     LOCATIONS
+========================= -->
+
+<section
+  class="locations"
+  id="lokasi"
+>
+
+  <div class="container">
+
+    <div class="section-header reveal">
+
+      <div>
+
+        <div class="eyebrow">
+          LOKASI
+        </div>
+
+        <h2>
+          Temukan outlet terdekat.
+        </h2>
+
+      </div>
+
+      <p>
+        Klik tombol lokasi untuk
+        membuka pencarian Google Maps.
+      </p>
+
+    </div>
+
+
+    <div class="location-grid">
+
+
+      <!-- CIATER -->
+
+      <div class="location-card reveal">
+
+        <div class="location-icon">
+          📍
+        </div>
+
+        <h3>
+          Ciater
+        </h3>
+
+        <p>
+          Outlet Bakso Seger Boyolali
+          — Ciater.
+        </p>
+
+        <a
+          class="map-link"
+          target="_blank"
+          href="https://www.google.com/maps/search/?api=1&query=Bakso+Seger+Boyolali+Ciater"
+        >
+          Buka Google Maps →
+        </a>
+
+      </div>
+
+
+      <!-- CIPUTAT -->
+
+      <div class="location-card reveal">
+
+        <div class="location-icon">
+          📍
+        </div>
+
+        <h3>
+          Ciputat
+        </h3>
+
+        <p>
+          Outlet Bakso Seger Boyolali
+          — Ciputat.
+        </p>
+
+        <a
+          class="map-link"
+          target="_blank"
+          href="https://www.google.com/maps/search/?api=1&query=Bakso+Seger+Boyolali+Ciputat"
+        >
+          Buka Google Maps →
+        </a>
+
+      </div>
+
+
+      <!-- PENGASINAN -->
+
+      <div class="location-card reveal">
+
+        <div class="location-icon">
+          📍
+        </div>
+
+        <h3>
+          Pengasinan
+        </h3>
+
+        <p>
+          Outlet Bakso Seger Boyolali
+          — Pengasinan.
+        </p>
+
+        <a
+          class="map-link"
+          target="_blank"
+          href="https://www.google.com/maps/search/?api=1&query=Bakso+Seger+Boyolali+Pengasinan"
+        >
+          Buka Google Maps →
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section
+  class="contact-section"
+  id="kontak"
+>
+
+  <div class="container">
+
+    <div class="contact-box reveal">
+
+      <div>
+
+        <div class="eyebrow">
+          KONTAK
+        </div>
+
+        <h2>
+          Yuk, mampir dan cobain.
+        </h2>
+
+        <p>
+          Hubungi Bakso Seger Boyolali
+          untuk pertanyaan menu atau
+          informasi outlet.
+        </p>
+
+      </div>
+
+
+      <div class="contact-actions">
+
+        <a
+          target="_blank"
+          href="https://wa.me/6285128041948?text=Halo%20Bakso%20Seger%20Boyolali%2C%20saya%20mau%20tanya%20menu."
+        >
+          WhatsApp
+        </a>
+
+        <a
+          href="tel:+6285128041948"
+        >
+          Telepon
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <div class="container footer-inner">
+
+    <p>
+      © 2026
+      <strong>
+        Bakso Seger Boyolali
+      </strong>.
+      All rights reserved.
+    </p>
+
+    <p>
+      Website Profil Bisnis
+      • Local SEO Ready
+    </p>
+
+  </div>
+
+</footer>
+
+
+<button
+  id="backTop"
+  aria-label="Kembali ke atas"
+>
+  ↑
+</button>
+
+
+<script>
+
+  /* =========================
+     FILTER MENU
+  ========================= */
+
+  const filterButtons =
+    document.querySelectorAll(".filter");
+
+  const menuCards =
+    document.querySelectorAll(".menu-card");
+
+
+  filterButtons.forEach(button => {
+
+    button.addEventListener(
+      "click",
+      () => {
+
+        filterButtons.forEach(btn => {
+          btn.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        const category =
+          button.dataset.category;
+
+
+        menuCards.forEach(card => {
+
+          const cardCategory =
+            card.dataset.category;
+
+
+          if (
+            category === "all" ||
+            category === cardCategory
+          ) {
+
+            card.style.display = "block";
+
+          } else {
+
+            card.style.display = "none";
+
+          }
+
+        });
+
+      }
+    );
+
+  });
+
+
+  /* =========================
+     SCROLL REVEAL
+  ========================= */
+
+  const observer =
+    new IntersectionObserver(
+      entries => {
+
+        entries.forEach(entry => {
+
+          if (entry.isIntersecting) {
+
+            entry.target.classList.add("show");
+
+          }
+
+        });
+
+      },
+      {
+        threshold: 0.12
+      }
+    );
+
+
+  document
+    .querySelectorAll(".reveal")
+    .forEach(element => {
+
+      observer.observe(element);
+
+    });
+
+
+  /* =========================
+     BACK TO TOP
+  ========================= */
+
+  const backTop =
+    document.getElementById("backTop");
+
+
+  window.addEventListener(
+    "scroll",
+    () => {
+
+      if (window.scrollY > 500) {
+
+        backTop.style.display = "grid";
+
+      } else {
+
+        backTop.style.display = "none";
+
+      }
+
+    }
+  );
+
+
+  backTop.addEventListener(
+    "click",
+    () => {
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+
+    }
+  );
+
+</script>
+
+</body>
+</html>
